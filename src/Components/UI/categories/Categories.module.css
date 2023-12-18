@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuTitle {
+    margin-bottom: 20px;
+    color: #007bff; /* Example color - adjust as needed */
+    font-family: 'Arial', sans-serif; /* Example font - adjust as needed */
+    font-size: 24px; /* Example font size - adjust as needed */
+    text-transform: uppercase; /* Capitalize for emphasis */
+    letter-spacing: 2px; /* Spacing for aesthetic */
+}
+
+.butCss {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.butCss:hover {
+    background-color: #007bff;
+    color: white;
+}
