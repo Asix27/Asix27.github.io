@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 24px;
+  height: 60px;
+  border: var(--border-light-blue);
+  background-color: var(--color-white);
+  width: 100%;
+
+  img {
+    width: 90px;
+    height: 30px;
+  }
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 38px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}

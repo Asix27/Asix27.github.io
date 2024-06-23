@@ -3,7 +3,8 @@ import style from './Home.module.scss';
 import logo from '/src/assets/icons/Logo.svg';
 import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
-import logoutIcon from '/src/assets/icons/logout-icon.svg'; // Импорт иконки
+import logoutIcon from '/src/assets/icons/logout-icon.svg';
+import Header from "/src/components/header/Header.jsx";
 
 
 const Home = () => {
@@ -103,17 +104,7 @@ const Home = () => {
 
     return (
         <>
-            <header className={style.header}>
-                <a href="/">
-                    <img src={logo} alt="QAZAQ STROY"/>
-                </a>
-                <button className={style.logoutButton}>
-                    <Link to="/" className={style.link}>
-                        <img src={logoutIcon} alt="Logout Icon" className={style.logoutIcon} />
-                        Выйти
-                    </Link>
-                </button>
-            </header>
+            <Header/>
             <div className={style.homePage}>
                 <form action="" method="get">
                     <input type="text" placeholder="Введите текст" className={style.searchInput} />
